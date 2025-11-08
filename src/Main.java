@@ -1,22 +1,34 @@
-import java.util.Arrays;
 import java.util.Scanner;
+
+class  add{
+    public void showadd() {
+    Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the First Number:");
+        int a = sc.nextInt();
+        System.out.println("Enter the Second Number");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println("The Addition of the Two Numbers is:"+c);
+}
+    }
+
+class  sub{
+    public void showsub() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the First Number:");
+        int a = sc.nextInt();
+        System.out.println("Enter the Second Number");
+        int b = sc.nextInt();
+        int c = a - b;
+        System.out.println("The Subraction of the Two Numbers is"+c);
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
-    Scanner sc = new Scanner (System.in);
-    int StuMark = sc.nextInt();
-    int AttPer = sc.nextInt();
-    int FamInc = sc.nextInt();
-    if(StuMark >= 85 && AttPer >=75 && FamInc<=200000){
-        System.out.println("The Student is Eligible For The Scholarship");
-    }
-    else if (StuMark >= 90 && AttPer >=85){
-        System.out.println("The Student Is Eligible For The Full Scholarship");
-    }
-    else if (StuMark >= 80 && AttPer >=70){
-        System.out.println("The Student is Eligible For the Partial Scholarship");
-    }
-    else {
-        System.out.println("Not Eligible for the Scholarship");
-    }
+                add a1 = new add();
+                a1.showadd();
+                sub s1 = new sub();
+                s1.showsub();
     }
 }
