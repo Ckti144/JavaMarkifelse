@@ -1,11 +1,9 @@
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Queue<String> queue = new LinkedList<>();
-        queue.add("Sakthi");
-        queue.add("Yamal");
+        HashMap<Integer,String> Hmap = new LinkedHashMap<>();
+        Hmap.put(1,"Sakthi");
+        System.out.println(Hmap);
     }
 }
