@@ -1,48 +1,44 @@
-import java.util.Scanner;
-
-class  add{
-    public void showadd() {
-    Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the First Number:");
-        int a = sc.nextInt();
-        System.out.println("Enter the Second Number");
-        int b = sc.nextInt();
-        int c = a + b;
-        System.out.println("The Addition of the Two Numbers is:"+c);
-}
-    }
-
-class  sub{
-    public void showsub() {
+import java .util.Scanner;
+class Even{
+    public void showEven(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the First Number:");
-        int a = sc.nextInt();
-        System.out.println("Enter the Second Number");
-        int b = sc.nextInt();
-        int c = a - b;
-        System.out.println("The Subraction of the Two Numbers is"+c);
+        System.out.println("Enter the Value of the Wot:");
+        String Wot = sc.nextLine();
+        if (Wot.equals("Even")){
+            for(int i =0;i<=100;i++){
+                if (i%2 == 0) {
+                    System.out.println("Even Number"+i);
+                }
+            }
+        }
+        else {
+            System.out.println("Pass To The Another Class");
+        }
     }
 }
 
-class  mul{
-    public void showmul() {
+class ODD   {
+    public void showODD(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the First Number:");
-        int a = sc.nextInt();
-        System.out.println("Enter the Second Number");
-        int b = sc.nextInt();
-        int c = a - b;
-        System.out.println("The Subraction of the Two Numbers is"+c);
+        System.out.println("Enter the Value of the Wot:");
+        String WOt = sc.nextLine();
+        if (WOt.equals("ODD")){
+            for(int i =0;i<=100;i++){
+                if (i%3 == 0) {
+                    System.out.println("Even Number"+i);
+                }
+            }
+        }
+        else {
+            System.out.println("No Input Matches The Class");
+        }
     }
 }
-
 public class Main {
     public static void main(String[] args) {
-                add a1 = new add();
-                a1.showadd();
-                sub s1 = new sub();
-                s1.showsub();
-                mul m1 = new mul();
-                m1.showmul();
+        Even e1 = new Even();
+        e1.showEven();
+        ODD o1 = new ODD();
+        o1.showODD();
     }
 }
