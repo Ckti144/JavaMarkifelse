@@ -1,20 +1,13 @@
-class Parent {
-    String Intelligence = "SuperPower";
-    String Metabolism = "Fast";
-    void showAbilities(){
-        System.out.println("The Intelligence he Posses is"+Intelligence);
-        System.out.println("The Metabolism He posses is"+Metabolism);
-    }
-}
 
-class Child extends Parent{
-    void showAbilities(){
-        super.showAbilities();
-    }
-}
+import java.util.Stack;
 public class Main {
     public static void main(String[] args) {
-        Child P1 = new Child();
-        P1.showAbilities();
+    Stack<Integer> Src = new Stack<>();
+    Src.push(3);
+    Src.push(4);
+    Src.add(5);
+    System.out.println(Src.peek());
+    Src.pop();
+    System.out.println(Src);
     }
 }
