@@ -1,13 +1,11 @@
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Main {
     public static void main(String[] args) {
-        HashSet<Integer> hash = new HashSet<>();
-        hash.add(2);
-        hash.add(3);
-        hash.add(2);
-        System.out.println(hash);
-        hash.remove(3);
-        System.out.println(hash);
+        Queue<String> queue = new LinkedList<>();
+        queue.add("Sakthi");
+        queue.add("Yamal");
     }
 }
