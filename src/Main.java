@@ -6,6 +6,7 @@ public class Main {
      Qs.add("Mortal");
      Qs.add("Sesko");
      Qs.add("Mbeumo");
+        Qs.add("Bruno Fernandes");
      System.out.println(Qs);
      Qs.remove("Sesko");
      System.out.println(Qs);
