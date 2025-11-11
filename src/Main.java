@@ -2,12 +2,14 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-      LinkedList<String> LLs = new LinkedList<>();
-      LLs.add("Yamal");
-      LLs.add("RashFord");
-      System.out.println(LLs);
-      LLs.remove(1);
-      System.out.println(LLs);
+      ArrayList<Double> Arrb = new ArrayList<>();
+      Arrb.add(5.14);
+      Arrb.add(7.89);
+      System.out.println(Arrb);
+      Arrb.remove(1);
+      System.out.println(Arrb);
+
+
 
     }
 }
