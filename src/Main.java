@@ -2,13 +2,12 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-      HashSet<String> Hss = new HashSet<>();
-      Hss.add("Palmer");
-        Hss.add("Savinho");
-        Hss.add("Martenalli");
-        System.out.println(Hss);
-        Hss.remove("Savinho");
-        System.out.println(Hss);
+      HashMap<Integer,String> Hm = new HashMap<>();
+      Hm.put(1,"Alvaro");
+      Hm.put(2,"Rodrygo");
+      System.out.println(Hm);
+      Hm.remove(1,"Alvaro");
+      System.out.println(Hm);
 
 
 
