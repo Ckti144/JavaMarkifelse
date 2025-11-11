@@ -2,12 +2,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-      ArrayList<Double> Arrb = new ArrayList<>();
-      Arrb.add(5.14);
-      Arrb.add(7.89);
-      System.out.println(Arrb);
-      Arrb.remove(1);
-      System.out.println(Arrb);
+      HashSet<String> Hss = new HashSet<>();
+      Hss.add("Palmer");
+        Hss.add("Savinho");
+        Hss.add("Martenalli");
+        System.out.println(Hss);
+        Hss.remove("Savinho");
+        System.out.println(Hss);
 
 
 
