@@ -2,8 +2,12 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        HashMap<Integer,String> Hmap = new LinkedHashMap<>();
-        Hmap.put(1,"Sakthi");
-        System.out.println(Hmap);
+      LinkedList<String> LLs = new LinkedList<>();
+      LLs.add("Yamal");
+      LLs.add("RashFord");
+      System.out.println(LLs);
+      LLs.remove(1);
+      System.out.println(LLs);
+
     }
 }
